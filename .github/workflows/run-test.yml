@@ -16,7 +16,7 @@ jobs:
         run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Run tests and create a report file
-        run: yarn test
+        run: yarn run test:coverage:report
 
       - name: Read the report file and send data to google sheet
         run: node ./analysisCoverage.js
