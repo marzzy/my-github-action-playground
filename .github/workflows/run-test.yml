@@ -19,8 +19,4 @@ jobs:
         run: yarn test
 
       - name: Read the report file and send data to google sheet
-        run: |
-          content=`cat ./coverage/coverage-summary.json`
-          echo "::set-output name=testResultJson::$content"
-      - run: |
-          echo "${{fromJson(steps.set_var.outputs.testResultJson).total}}"
+        run: node ./analysisCoverage.js
