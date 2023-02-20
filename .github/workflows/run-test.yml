@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Install yarn dependencies
         run: |
-          echo pwd
-          echo ls -al
+          echo $PWD
+          ls -al
           yarn install --immutable --immutable-cache --check-cache
 
       - name: Run tests
