@@ -6,6 +6,10 @@ jobs:
   build:
     name: Run test and Create coverage report
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+
     steps:
       - name: Install yarn dependencies
         run: yarn install --immutable --immutable-cache --check-cache
