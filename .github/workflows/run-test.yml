@@ -13,10 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.1
       - name: Install yarn dependencies
-        run: |
-          echo $PWD
-          ls -al
-          yarn install --immutable --immutable-cache --check-cache
+        run: yarn install --immutable --immutable-cache --check-cache
 
-      - name: Run tests
+      - name: Run tests and create a report file
         run: yarn test
+
+      - name: Read the report file and send data to google sheet
+        run: |
+          content=`cat ./coverage/coverage-summary.json`
+          echo "::set-output name=testResultJson::$content"
+      - run: |
+          echo "${{fromJson(steps.set_var.outputs.testResultJson).total}}"
