@@ -10,8 +10,5 @@ jobs:
       - name: Install yarn dependencies
         run: yarn install --immutable --immutable-cache --check-cache
 
-      - name: Build project
-        run: yarn build
-
       - name: Run tests
         run: yarn test
