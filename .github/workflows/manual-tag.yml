@@ -1,13 +1,11 @@
 on: push
 
 jobs:
-  release-on-push:
+  build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-      - name: create tag and prepare release
+      - name: Tag and prepare release
         id: tag_and_prepare_release
         uses: K-Phoen/semver-release-action@v1.3.1
         with:
