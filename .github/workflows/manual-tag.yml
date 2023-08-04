@@ -14,7 +14,7 @@ jobs:
         git push origin v1.0.1
 
     - name: Rebase pull requests
-      if: success()
+      if: failure()
       uses: linhbn123/rebase-pull-requests@v1.0.1
 
 #       - uses: avakar/tag-and-release@v1
