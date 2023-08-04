@@ -12,3 +12,13 @@ jobs:
         git config user.email github-actions@github.com
         git tag v1.0.1
         git push origin v1.0.1
+
+    - name: Rebase pull requests
+      if: failure()
+      uses: linhbn123/rebase-pull-requests@v1.0.1
+
+#       - uses: avakar/tag-and-release@v1
+#         with:
+#           tag_name: v123
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
