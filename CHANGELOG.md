@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/marzzy/my-github-action-playground/compare/v-1.1.0...v-2.0.0) (2023-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* more info
+
+### Miscellaneous Chores
+
+* example of breaking change commit ([b518f4c](https://github.com/marzzy/my-github-action-playground/commit/b518f4c90aba260fe8d2ef84c2e2d0b2c19e7d6b))
+
 ## [1.1.0](https://github.com/marzzy/my-github-action-playground/compare/v-1.0.1...v-1.1.0) (2023-08-07)
 
 
