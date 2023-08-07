@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          example of breaking change
         </a>
       </header>
     </div>
