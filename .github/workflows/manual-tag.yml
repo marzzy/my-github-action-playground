@@ -6,16 +6,21 @@ jobs:
     - name: Checkout projects
       uses: actions/checkout@main
      
-    - name: create tag 
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git tag v1.0.1
-        git push origin v1.0.1
+    # - name: create tag 
+    #   run: |
+    #     git config user.name github-actions
+    #     git config user.email github-actions@github.com
+    #     git tag v1.0.1
+    #     git push origin v1.0.1
 
-    - name: Rebase pull requests
-      if: failure()
-      uses: linhbn123/rebase-pull-requests@v1.0.1
+    # - name: Rebase pull requests
+    #   if: failure()
+    #   uses: linhbn123/rebase-pull-requests@v1.0.1
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npx semantic-release
 #
 #       - uses: avakar/tag-and-release@v1
 #         with:
