@@ -4,7 +4,9 @@ dryRun: false
 tagFormat: 'v-${version}'
 
 # Global plugin options (will be passed to all plugins)
-preset: 'conventionalcommits'
+# preset: 'conventionalcommits'
+config: '@commitlint/cli'
+
 # slackWebhook: 'MYSLACKURL' # if you need slack notifies
 
 # Responsible for verifying conditions necessary to proceed with the release:
@@ -27,6 +29,7 @@ analyzeCommits:
 # the release notes will be the result of the concatenation of each plugin output.
 generateNotes:
   - path: '@semantic-release/release-notes-generator'
+    # config: '@commitlint/cli'
     writerOpts:
       groupBy: 'type'
       commitGroupsSort: 'title'
