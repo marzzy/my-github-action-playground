@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/marzzy/my-github-action-playground/compare/v-1.0.1...v-1.1.0) (2023-08-07)
+
+
+### Bug Fixes
+
+* this is a sample fix ([ed252e8](https://github.com/marzzy/my-github-action-playground/commit/ed252e8f6650bae01b2ebcc8ee5de8861f114a2f))
+
+
+### Features
+
+* **ci-cd:** setup the commit lint with husky ([d459ea5](https://github.com/marzzy/my-github-action-playground/commit/d459ea5db6c823d57d4ee1b6c6a62b028f62a7fa))
+
 ## [1.0.1](https://github.com/marzzy/my-github-action-playground/compare/v-1.0.0...v-1.0.1) (2023-08-07)
 
 
