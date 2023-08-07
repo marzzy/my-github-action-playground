@@ -1,6 +1,6 @@
 {
   "name": "github-action-playground",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --watchAll=false --coverage",
     "test:coverage:report": "react-scripts test --watchAll=false --coverage --coverageReporters json-summary",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -38,14 +39,28 @@
     ]
   },
   "release": {
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/github", {
-        "assets": ["dist/**"]
-        }],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            "dist/**"
+          ]
+        }
+      ],
       "@semantic-release/git"
-    ],
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marzzy/my-github-action-playground.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^21.0.7"
   }
 }
