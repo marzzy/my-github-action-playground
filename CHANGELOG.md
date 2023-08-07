@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/marzzy/my-github-action-playground/compare/v-2.0.0...v-3.0.0) (2023-08-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** minimal breaking change
+
+### Features
+
+* **ci:** minimal breaking change ([11502a1](https://github.com/marzzy/my-github-action-playground/commit/11502a18c322e3d04695853bc0f363835b3df0ef))
+
 ## [2.0.0](https://github.com/marzzy/my-github-action-playground/compare/v-1.1.0...v-2.0.0) (2023-08-07)
 
 
