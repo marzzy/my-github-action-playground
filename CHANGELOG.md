@@ -1,3 +1,11 @@
+## [3.1.0](https://github.com/marzzy/my-github-action-playground/compare/v-3.0.0...v-3.1.0) (2023-08-07)
+
+
+### Features
+
+* change the rules config ([edacd04](https://github.com/marzzy/my-github-action-playground/commit/edacd04be137b71b74df1eb8f06febb87734fa23))
+* setup the prompt helper for commit lint ([0d6b70d](https://github.com/marzzy/my-github-action-playground/commit/0d6b70d66b90dba6bf1b33c924fbcc6b487c5cdb))
+
 ## [3.0.0](https://github.com/marzzy/my-github-action-playground/compare/v-2.0.0...v-3.0.0) (2023-08-07)
 
 
