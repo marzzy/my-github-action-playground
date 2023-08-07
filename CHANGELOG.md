@@ -1,3 +1,10 @@
+## [3.2.0](https://github.com/marzzy/my-github-action-playground/compare/v-3.1.0...v-3.2.0) (2023-08-07)
+
+
+### Features
+
+* improve ci ([a45a06e](https://github.com/marzzy/my-github-action-playground/commit/a45a06ed4978068abcbae70056967f39030a05c8))
+
 ## [3.1.0](https://github.com/marzzy/my-github-action-playground/compare/v-3.0.0...v-3.1.0) (2023-08-07)
 
 
