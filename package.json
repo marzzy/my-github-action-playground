@@ -18,7 +18,8 @@
     "test:coverage": "react-scripts test --watchAll=false --coverage",
     "test:coverage:report": "react-scripts test --watchAll=false --coverage --coverageReporters json-summary",
     "eject": "react-scripts eject",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "commit"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +41,8 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/prompt-cli": "^17.6.7",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/git": "^10.0.1",
